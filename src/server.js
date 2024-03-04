@@ -15,6 +15,10 @@ const messages = {
     javascript: []
 }
 
+app.get('/', (req, res) => {
+    res.write(`Socket IO start on port: ${prot}`)
+})
+
 io.on("connection", socket => {
     socket.on("join-server", (username) => {
         const user = {
