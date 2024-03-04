@@ -4,12 +4,7 @@ const app = express();
 const server = http.createServer(app);
 const socket = require("socket.io");
 const cors = require("cors");
-const io = socket(server, {
-    cors: {
-        origin: "https://chat-backend-pf4s.vercel.app",
-        methods: ["GET", "POST"],
-    }
-});
+const io = socket(server);
 
 let users = [];
 
