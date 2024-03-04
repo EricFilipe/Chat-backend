@@ -4,7 +4,12 @@ const app = express();
 const server = http.createServer(app);
 const socket = require("socket.io");
 const cors = require("cors");
-const io = socket(server);
+const io = socket(server, {
+    cors: {
+        origin: "http://localhost:3000",
+        methods: ["GET", "POST"]
+    }
+});
 
 let users = [];
 
