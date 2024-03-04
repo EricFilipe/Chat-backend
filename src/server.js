@@ -6,7 +6,7 @@ const socket = require("socket.io");
 const cors = require("cors");
 const io = socket(server, {
     cors: {
-        origin: "http://localhost:3000",
+        origin: "https://chat-backend-pf4s.vercel.app",
         methods: ["GET", "POST"],
     }
 });
