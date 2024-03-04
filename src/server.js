@@ -16,7 +16,8 @@ const messages = {
 }
 
 app.get('/', (req, res) => {
-    res.write(`Socket IO start on port: ${prot}`)
+    res.write(`Socket IO start on port: ${prot}`);
+    res.end();
 })
 
 io.on("connection", socket => {
