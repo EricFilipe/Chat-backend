@@ -23,7 +23,7 @@ const messages = {
 }
 
 app.get('/', (req, res) => {
-    res.write(`Socket IO start on port: ${prot}`);
+    res.send(`Socket IO start on port: ${prot}`);
     res.end();
 })
 
