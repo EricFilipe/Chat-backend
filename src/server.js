@@ -11,6 +11,8 @@ const io = socket(server, {
     }
 });
 
+app.use(cors());
+
 let users = [];
 
 const messages = {
