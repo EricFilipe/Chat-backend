@@ -16,10 +16,10 @@ app.use(cors());
 let users = [];
 
 const messages = {
-    general: [],
-    random: [],
-    jokes: [],
-    javascript: []
+    Geral: [],
+    Python: [],
+    PHP: [],
+    Javascript: []
 }
 
 app.get('/', (req, res) => {
